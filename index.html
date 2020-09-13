@@ -1,0 +1,17 @@
+<html>
+	<body onkeyup="kup(event)">
+		<h1>YBLUI.github.io</h1>
+		<p><span class="lgt">esc</span> 退出</p>
+		<p><span class="lgt">a</span> /Yblui-b</p>
+		<script>
+			function kup(event){
+				switch(event.keyCode){
+					case 27:
+						history.go(-1);
+					case 65:
+						window.location="/yblui-b";
+				}
+			}
+		</script>
+	</body>
+</html>
