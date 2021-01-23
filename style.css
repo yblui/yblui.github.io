@@ -1,6 +1,6 @@
 @font-face{
 	font-family: Montserrat;
-   	src: url('yblui.github.io/yblui-e/Montserrat-Regular-8.otf')
+   	src: url('https://yblui.github.io/yblui-e/Montserrat-Regular-8.otf');
 }
 
 *{
@@ -10,9 +10,16 @@
 }
 
 h1{
-	font-size:30pt
+	font-size:30pt;
+	margin:0;
+	background-color:black;
+	color:white
 }
 
 .lgt{
 	opacity:0.6;
+}
+
+body{
+	margin:0;
 }
