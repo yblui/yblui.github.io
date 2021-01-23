@@ -6,8 +6,11 @@ function kup(event){
 		case 66:
 			window.location="/yblui-b";
 			break;
-   		 case 68:
+   		case 68:
 			window.location="/yblui-d";
+			break;
+		case 69:
+			window.location="/yblui-e";
 			break;
 	}
 }
