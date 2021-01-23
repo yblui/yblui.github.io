@@ -1,11 +1,18 @@
+@font-face{
+	font-family: Montserrat;
+   	src: url('yblui.github.io/yblui-e/Montserrat-Regular-8.otf')
+}
+
 *{
 	text-align:center;
-	font-family:"Microsoft Yahei UI","Segoe UI",sans-serif;
+	font-family:Montserrat,"Microsoft Yahei UI","Segoe UI",sans-serif;
 	font-size:18pt;
 }
+
 h1{
 	font-size:30pt
 }
+
 .lgt{
 	opacity:0.6;
 }
