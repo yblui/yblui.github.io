@@ -1,25 +1,58 @@
-@font-face{
-	font-family: Montserrat;
-   	src: url('https://yblui.github.io/yblui-e/Montserrat-Regular-8.otf');
+* {
+	font-family: "Microsoft Yahei UI", "Segoe UI", sans-serif;
+	font-size: 18pt;
+	transition: 0.3s;
 }
 
-*{
-	text-align:center;
-	font-family:Montserrat,"Microsoft Yahei UI","Segoe UI",sans-serif;
-	font-size:18pt;
+h1 {
+	font-size: 30pt;
+	padding-top: 300px;
+	font-weight: 400;
 }
 
-h1{
-	font-size:30pt;
-	margin:0;
-	background-color:black;
-	color:white
+hr {
+	border: solid 0.5px gray;
 }
 
-.lgt{
-	opacity:0.6;
+.lgt {
+	opacity: 0.6;
 }
 
-body{
-	margin:0;
+body {
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+div {
+	border: solid 1px gray;
+	margin: 9px;
+	padding: 9px;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #065378;
+}
+
+div:hover {
+	border: solid 1px #065378;
+	text-decoration: underline;
+	color: #065378;
+}
+
+div:hover::after {
+	content: ">";
+	float: right;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
