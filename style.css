@@ -55,4 +55,7 @@ div:hover::after {
 		padding-left: 0;
 		padding-right: 0;
 	}
+	h1 {
+		padding-top: 30px;
+	}
 }
