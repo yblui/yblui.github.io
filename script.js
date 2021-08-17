@@ -15,5 +15,8 @@ function kup(event) {
 		case 70:
 			window.location = "/yblui-f";
 			break;
+		case 71:
+			window.location = "/yblui-g";
+			break;
 	}
 }

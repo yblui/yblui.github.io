@@ -2,6 +2,7 @@
 	font-family: "Microsoft Yahei UI", "Segoe UI", sans-serif;
 	font-size: 18pt;
 	transition: 0.3s;
+	user-select: none;
 }
 
 h1 {
@@ -27,7 +28,7 @@ div {
 	border: solid 1px gray;
 	margin: 9px;
 	padding: 9px;
-	width: 100%;
+	width: calc(100% - 36px);
 }
 
 a {
@@ -37,12 +38,11 @@ a {
 
 a:hover {
 	color: #065378;
+	text-decoration: underline;
 }
 
 div:hover {
 	border: solid 1px #065378;
-	text-decoration: underline;
-	color: #065378;
 }
 
 div:hover::after {
@@ -58,4 +58,14 @@ div:hover::after {
 	h1 {
 		padding-top: 30px;
 	}
+}
+
+footer {
+	width: calc(100% - 18px);
+	background-color: #eee;
+	padding: 9px;
+}
+
+footer a {
+	color: #777;
 }
