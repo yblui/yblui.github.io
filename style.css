@@ -1,93 +1,36 @@
-* {
-	font-family: "Microsoft Yahei UI", "Segoe UI", sans-serif;
-	font-size: 18pt;
-	transition: 0.3s;
-	user-select: none;
+@font-face {
+    font-family: "Ybluifont";
+    src: url("https://yblui.github.io/yblui-font/YbluiFont.ttf");
 }
 
-h1 {
-	font-size: 30pt;
-	padding-top: 300px;
-	font-weight: 400;
-	margin-top: 0;
-}
-
-hr {
-	border: solid 0.5px gray;
-}
-
-.lgt {
-	opacity: 0.6;
-}
-
-body {
-	animation: anim 0.9s;
-	padding-left: 200px;
-	padding-right: 200px;
-	background-color: white;
-	margin: 0;
-	min-height: 100%;
-}
-
-div {
-	border: solid 1px gray;
-	margin: 9px;
-	padding: 9px;
-	width: 300px;
-	display: inline-block;
-}
-
-a {
-	text-decoration: none;
-	color: black;
-}
-
-a:hover {
-	color: #065378;
-	text-decoration: underline;
-}
-
-div:hover {
-	border: solid 1px #065378;
-}
-
-div:hover::after {
-	content: ">";
-	float: right;
-}
-
-@media screen and (max-width: 800px) {
-	body {
-		padding-left: 0;
-		padding-right: 0;
-	}
-	h1 {
-		padding-top: 30px;
-	}
-}
-
-footer {
-	width: calc(100% - 18px);
-	background-color: #eee;
-	padding: 9px;
-}
-
-footer a {
-	color: #777;
-}
-
-@keyframes anim {
-	from {
-		transform: scale(0.9, 0.9);
-		opacity: 0.7;
-	}
-	to {
-		transform: scale(1, 1);
-		opacity: 1;
-	}
+h1, p {
+    color: white;
+    font-family: "Ybluifont", sans-serif;
+    text-align: center;
+    font-weight: normal;
+    font-size: 30pt;
+    cursor: default;
 }
 
 html {
-	background-color: black;
-	height: 100%;
+    background-color: #111;
+}
+
+.container {
+    margin-top: 20vh;
+    animation: animation 3s ease;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 0;
+        margin-top: 0;
+        filter: blur(30px);
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 20vh;
+        filter: none;
+    }
 }
